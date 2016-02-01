@@ -1,0 +1,27 @@
+{
+  "name": "izi",
+  "version": "0.0.1",
+  "description": "48hr Rapid Prototype Test API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BriantAnthony/api-weekend-sprint-jan.git"
+  },
+  "author": "BriantAnthony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BriantAnthony/api-weekend-sprint-jan/issues"
+  },
+  "homepage": "https://github.com/BriantAnthony/api-weekend-sprint-jan#readme",
+  "dependencies": {
+    "basic-auth": "^1.0.3",
+    "bcrypt": "^0.8.5",
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "mongoose": "^4.3.7",
+    "request-promise": "^2.0.0"
+  }
+}
