@@ -86,3 +86,9 @@ Install the dependencies first, then run the server with the following commands:
 npm install
 node server
 ```
+Your localhost will be running on:
+```
+http://localhost:4330/api
+```
+
+...while the deployed version is currently hosted on aws ec2 [here](http://ec2-52-23-165-85.compute-1.amazonaws.com:4330/api/)
