@@ -6,12 +6,10 @@ This API runs on port 4000 and accepts/returns json responses for the following 
 
 - POST /register
 - POST /login
-
 - GET /users
 - GET /users/<user_id>
 - PUT /users/<user_id>
 - DELETE /users/<user_id>
-
 - GET /search?q=<query>
 - GET /search/history
 - GET /search/history/<user_id>
