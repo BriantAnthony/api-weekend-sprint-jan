@@ -18,7 +18,9 @@ This API runs on port 4000 and accepts/returns json responses for the following 
 Note: prepend all routes with 'api'.
 
 ## Example route
-```http:/localhost:4000/api/register```
+```
+http:/localhost:4000/api/register
+```
 
 ## Unauthenticated Routes
 Minimal functionality is allowed for unauthenticated users. Unauthenticated users are only allowed to register and log in.
