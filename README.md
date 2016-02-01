@@ -2,7 +2,7 @@
 48 hour test api rapid prototype
 
 ## Overview
-This API runs on port 4000 and accepts/returns json responses for the following endpoints:
+This API runs on port 4330 and accepts/returns json responses for the following endpoints:
 
 - POST /register
 - POST /login

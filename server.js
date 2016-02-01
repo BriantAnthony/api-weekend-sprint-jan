@@ -36,6 +36,6 @@ var search = require('./app/routes/search')(api, express, app, mongoose, config,
 app.use('/api', api);
 
 // start server
-var port = process.env.PORT || 4000;
+var port = process.env.PORT || 4330;
 app.listen(port);
 console.log('Listening at http://locahost:' + port);
