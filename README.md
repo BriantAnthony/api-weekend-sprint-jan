@@ -7,13 +7,13 @@ This API runs on port 4000 and accepts/returns json responses for the following 
 - POST /register
 - POST /login
 - GET /users
-- GET /users/<user_id>
-- PUT /users/<user_id>
-- DELETE /users/<user_id>
-- GET /search?q=<query>
+- GET /users/USER_ID
+- PUT /users/USER_ID
+- DELETE /users/USER_ID
+- GET /search?q=QUERY
 - GET /search/history
-- GET /search/history/<user_id>
-- GET /search/giphy/translate?q=<query>
+- GET /search/history/USER_ID
+- GET /search/giphy/translate?q=QUERY
 
 Note: prepend all routes with 'api'.
 
@@ -41,20 +41,20 @@ This API uses Basic Authentication Scheme and only authenticates registered user
 ### GET /users
 Returns all users in the database. This is also used in middleware to validate authorization headers
 
-### GET /users/<user_id>
+### GET /users/USER_ID
 Returns a single user object
 
-### PUT /users/<user_id>
+### PUT /users/USER_ID
 Updates a single user object with the following fields:
 - firstName
 - lastName
 - email
 - phone
 
-### DELETE /users/<user_id>
+### DELETE /users/USER_ID
 Deletes a single user from the database
 
-### GET /search?q=<query>
+### GET /search?q=QUERY
 Queries the database (and logs queries) for all users matching the following indexed fields:
 - count
 - firstName
@@ -70,10 +70,10 @@ Returns full history of all queries with the following fields:
 - user
 - results (experimental)
 
-### GET /search/history/<user_id>
+### GET /search/history/USER_ID
 Return all queries for a single user. The user's name is separated into a separate object for easier parsing on the frontend. Otherwise the returned field are identical to the full search history.
 
-### GET /search/giphy/translate?q=<query>
+### GET /search/giphy/translate?q=QUERY
 Accepts are query and finds a suitable animated GIF relevant to the search query. The queries are also logged and integrated into the search history.
 
 ### How do we know who searched what?
