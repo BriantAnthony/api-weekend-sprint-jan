@@ -78,3 +78,11 @@ Accepts are query and finds a suitable animated GIF relevant to the search query
 
 ### How do we know who searched what?
 All search queries parse a 'user-id' header which should be set with the authenticated user's '_id' on the frontend immediately afte the user is successfully authenticated.
+
+### Getting Started
+Install the dependencies first, then run the server with the following commands:
+
+```
+npm install
+node server
+```
