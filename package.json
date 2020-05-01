@@ -4,7 +4,9 @@
   "description": "48hr Rapid Prototype Test API",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,8 @@
     "express": "^4.13.4",
     "mongoose": "^4.3.7",
     "morgan": "^1.6.1",
-    "request-promise": "^2.0.0"
-  }
+    "request-promise": "^2.0.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
