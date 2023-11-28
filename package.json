@@ -23,6 +23,6 @@
     "express": "^4.13.4",
     "mongoose": "^4.3.7",
     "morgan": "^1.6.1",
-    "request-promise": "^2.0.0"
+    "request-promise": "^4.0.0"
   }
 }
